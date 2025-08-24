@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: #008035;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex img{
+    width: 4000px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    font-size: clamp(10px, 7vw, 18px);
+    margin-left: 5px;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+.menu li a:hover{
+    background-color: #079642;
+    text-decoration: underline;
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    margin-top: 100px;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.flex .botão{
+    transition: 0.3s;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(24px, 7vw, 46px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -80px;
+    padding: 20px;  
+}
+.flex .botão:hover{
+    transform: scale(1.1);
+}
+.footer{
+    background-color: #008035;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+.footer p{
+    font-weight: bold;
+    font-size: clamp(6px, 4vw, 12px);
+    margin: 5px 0;
+}
+.footer .lista{
+    margin-top: 2px;
+    padding: 10px;
+    text-align: left;
+    justify-content: space-between; 
+}
+.lista li{
+    font-size: clamp(8px, 2vw, 14px);
+    font-family: "Arial", sans-serif;
+    margin-top: 5px;
+}
