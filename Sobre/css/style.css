@@ -74,7 +74,7 @@ header img{
 .conteudo__item{
     padding: 15px;
     border-radius: 5px;
-    background-color: #44753B; 
+    background-color: #118843; 
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.342);
 }
 .conteudo__titulo{
@@ -100,7 +100,7 @@ header img{
     margin-top: 20px;
     padding: 13px;
     border-radius: 5px;
-    background-color: #44753B;
+    background-color: #118843;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);    
 }
 .midia-social__titulo{
@@ -130,7 +130,7 @@ header img{
 .representantes{
     width: 100%;
     max-width: 800px;
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
 }
 .representantes__intro{
