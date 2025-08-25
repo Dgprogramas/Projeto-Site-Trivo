@@ -15,6 +15,6 @@ O projeto tem como objetivo **aprimorar meus conhecimentos em Front-End** e apli
 
 ## 🛠️ Tecnologias Utilizadas
 - **HTML5**  
-- **CSS3**     
-
+- **CSS3**
+- **JavaScript** 
 ---
