@@ -1,166 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 body{
-    background-color: #364B32;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #edfde7, #d4fdc5);
+    min-height: 100vh;
+}
+ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    max-width: 100%;
+    display: block;
 }
 
 header{
-    background-color: #44753B;
-    margin: 0px;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);
+    background-color: #008035;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-header > h1{
-    margin-top: 5px;
-    padding: 6px;
+header img{
+    max-width: 70px;
+}
+.header__pagina-atual{
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
     color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
 
-}
-header > p{
-    font-family: "Raleway", sans-serif;
-    font-style: normal;    
-    text-align: center;
-    margin-top: -40px;
-    color: #cefdc6;
-}
-nav > a{
-    font-family: "Raleway", sans-serif;
-    font-size: 11px;
-    color: #9ac093;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 15px;
-}
-nav > a:hover{
-    text-decoration: underline;
-}
-main{
-    margin-top: 20px;
+.menu{
     display: flex;
-    justify-content: center;
+    gap: 15px;
 }
-main > picture{
-    max-width: 100%;
-}
-main > picture > img {
-    transition: 0.3s;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);
-    border-radius: 5px;
-    width: 100%;
+
+.menu a{
     display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
 }
-main > picture > img:hover{
-    transform: scale(1.01);
-}
-.conteudo{
+.menu a:hover{
+    background-color: #079642;
+    text-decoration: underline;}
+
+.main-content{
+    max-width: 1100px;
+    margin: 20px auto;
     display: flex;
-    gap: 20px;
-}
-article{
-    background-color: #44753B;
-    width: 200px;
-    margin-top: 20px;
-    padding: 13px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);    
-}
-article > div{
-    display: contents;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
 }
 
-article > div > h2{
+.conteudo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+.conteudo__item{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #44753B; 
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.342);
+}
+.conteudo__titulo{
     margin-top: 5px;
     text-align: left;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
-    color: white;
+    color: white;    
 }
-article > div > p{
+.conteudo__texto{
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-size: 15px;
     text-align: justify;
-    margin-top: -10px;
+    margin-top: 5px; 
     color: #cefdc6;
 }
-aside{
-    background-color: #44753B;
-    width: 200px;
+.midia-social{
+    width: 100%;
+    max-width: 400px;
     margin-top: 20px;
     padding: 13px;
     border-radius: 5px;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);
+    background-color: #44753B;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);    
 }
-aside > section > p{
+.midia-social__titulo{
+    transition: 0.3s;
+    margin-top: 0px; 
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: white;    
+}
+.midia-social__titulo:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.midia-social p{
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-size: 15px;
     text-align: justify;
     color: #cefdc6;
+    margin-top: 10px;    
 }
-
-aside > a{
-    text-decoration: none;
-}
-aside > a > h2{
-    transition: 0.3s;
-    margin-top: 20px;
+.midia-social__video-info{
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 19px;
-    color: white;
 }
-aside > a > h2:hover{
-    transform: scale(1.1);
-    text-decoration: underline;
+.representantes{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    text-align: center;
 }
-aside p > strong > a {
-  color: #cefdc6;
-  text-decoration: none;
-}
-aside p > strong > a:hover {
-  text-decoration: underline;
-}
-.conteudo > div{
-    display: block;
-}
-.conteudo > div > p{
+.representantes__intro{
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-size: 20px;
-    text-align: justify;
-    margin-top: 20px;
-    color: #cefdc6;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #44753B;
 }
-.link-representantes{
-    display: inline-block;
-    margin-right: 30px;
-    color: white;
+.representantes__perfis{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.representantes__perfil {
+    transition: 0.3s;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.representantes__perfil:hover{
+    transform: scale(1.1);
+}
+.representantes__links{
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.representantes__link{
+    color: #008035;
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-size: 20px;
     text-decoration: none;
 }
-.link-representantes:hover{
+.representantes__link:hover{
     text-decoration: underline;
 }
-.perfil{
-    transition: 0.3s;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-.perfil:hover{
-    transform: scale(1.1);
+
+@media (max-width: 768px){
+    .header__pagina-atual{
+        display: none;
+    }
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header__pagina-atual{
+        margin: 10px 0;
+    }
 }

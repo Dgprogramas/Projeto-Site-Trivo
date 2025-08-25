@@ -7,52 +7,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Conheça a Trivo</h1>
-        <p>Trivo, unindo estilo e propósito</p>
-        <nav>
-            <a href="../Home/index.html">Página Inicial</a>
-            <a href="">Contato</a>
+    <header class="header">
+        <a href="../Home/index.html"><img src="../../imagens/icon.ico.jpg" alt="">
+        </a>
+        <span class ="header__pagina-atual">Você está em: Sobre</span>
+        <nav class="header__nav">
+            <ul class="menu">
+                <li><a href="../Home/index.html">Página Inicial</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Produtos</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-    <picture>
-        <img src="image/header.jpg" alt="header">
-    </picture>
-    </main>
-    <section class="conteudo">
-        <article>
-            <div>
-                <h2>Quem somos?</h2>
-                <p> Somos uma marca independente, movida pela criatividade de 3 jovens e pela crença de que cada peça conta uma história e carrega uma energia especial.</p>
-            </div>
-            <div>
-                <h2>Por que comprar Trivo?</h2>
-                <p>Na TRIVO, acreditamos que sorte é estar no lugar certo, na hora certa… e com o estilo certo. Aqui, cada detalhe é pensado para que você sinta a conexão entre estilo e propósito.</p>
-            </div>
-        </article>
+    <main class="main-content">
 
-        <aside>
-            <a href="https://www.instagram.com/p/DH_uQAXRFRp/" target= "_blank" rel= "unfollow">
-                <h2>@usetrivo</h2>
-                <section>
-                    <video src="video/WhatsApp Video 2025-08-04 at 15.29.28.mp4" poster="image/WhatsApp Image 2025-08-04 at 15.33.45.jpeg" width="200px" controls muted autoplay loop>Good Luck Drop</video>
+        <section class="conteudo">
+            <article class="conteudo__item" >
+                    <h2 class="conteudo__titulo">Quem somos?</h2>
+                    <p class="conteudo__texto"> Somos uma marca de roupas <i>streetwear</i> brasiliense, independente e movida pela criatividade de 3 jovens com a crença de que cada peça conta uma história e carrega uma energia especial.</p>
+            </article>
+            <article class="conteudo__item">
+                <h2 class="conteudo__titulo">Por que comprar Trivo?</h2>
+                <p class="conteudo__texto">Na TRIVO, acreditamos que sorte é estar no lugar certo, na hora certa… e com o estilo certo. Aqui, cada detalhe é pensado para que você sinta a conexão entre estilo e propósito.</p>
+            </article>
+        </section>
+
+            <aside class="midia-social">
+                <a href="https://www.instagram.com/p/DH_uQAXRFRp/" target= "_blank" rel= "unfollow">
+                    <h2 class="midia-social__titulo">@usetrivo</h2>
                 </a>
+                <section class="midia-social__video-info">
+                    <video src="video/WhatsApp Video 2025-08-04 at 15.29.28.mp4" poster="image/WhatsApp Image 2025-08-04 at 15.33.45.jpeg" width="200px" controls muted autoplay loop>Good Luck Drop</video>
                     <p>Acesse nosso <strong><a href="https://www.instagram.com/usetrivo/" target= "_blank" rel= "unfollow">Instagram</a></strong> para mais novidades!</p>
                 </section>
-        </aside>
-        <div class="donos">
-            <p>Bem-vindo à Trivo. Vista-se de boas vibrações e faça parte dessa história! Prezamos por sempre inovar, novas coleções, novos sentimentos e claro novos estilos, fiquem atentos com as novidades! Conheça nossos <strong>representantes</strong>:</p>
-            <img class="perfil" width="100px" src="image/vitor.jpg.png" alt="Vitor">
-            <img class="perfil" width="100px" src="image/nicolau.jpg.png" alt="Nicollas">
-            <img class="perfil" width="100px" src="image/Diogo.jpg.png" alt="Diogo">
-            <img class="perfil" width="100px" src="image/trivo.jpg.png" alt="USETRIVO">
-            <p><a class="link-representantes" href="https://www.instagram.com/vitorldslds/" target= "_blank" rel= "unfollow">@vitorldslds</a><a class="link-representantes" href="https://www.instagram.com/nicollasxn/" target= "_blank" rel= "unfollow">@nicollasxn</a><a class="link-representantes" href="https://www.instagram.com/diogoalvesslv/" target= "_blank" rel= "unfollow">@diogoalvesslv</a>
-            <a class="link-representantes" href="https://www.instagram.com/usetrivo/" target= "_blank" rel= "unfollow">@usetrivo</a></p>
-            <p></p>
-        </div>
+            </aside>
 
-    </section>
-
+            <section class="representantes">
+                <p class="representantes__intro">Bem-vindo à Trivo. Vista-se de boas vibrações e faça parte dessa história! Prezamos por sempre inovar, novas coleções, novos sentimentos e claro novos estilos, fiquem atentos com as novidades! Conheça nossos <strong>representantes</strong>:</p>
+                
+                <div class="representantes__perfis">
+                    <img class="representantes__perfil"  src="image/vitor.jpg.png" alt="Vitor">
+                    <img class="representantes__perfil"  src="image/nicolau.jpg.png" alt="Nicollas">
+                    <img class="representantes__perfil"  src="image/Diogo.jpg.png" alt="Diogo">
+                    <img class="representantes__perfil"  src="image/trivo.jpg.png" alt="USETRIVO">
+                </div>
+                <div class="representantes__links">
+                    <a class="representantes__link" href="https://www.instagram.com/vitorldslds/" target= "_blank" rel= "unfollow">@vitorldslds</a>
+                    <a class="representantes__link" href="https://www.instagram.com/nicollasxn/" target= "_blank" rel= "unfollow">@nicollasxn</a>
+                    <a class="representantes__link" href="https://www.instagram.com/diogoalvesslv/" target= "_blank" rel= "unfollow">@diogoalvesslv</a>
+                    <a class="representantes__link" href="https://www.instagram.com/usetrivo/" target= "_blank" rel= "unfollow">@usetrivo</a>
+                </div>
+            </section>
+    </main>
 </body>
 </html>
